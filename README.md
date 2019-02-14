@@ -1,3 +1,7 @@
+# Notice
+Due to a bug in the Stream Deck software this repository is not in functioning condition.
+That bug being the working directory for executables is not being set to the plugin's directory; instead it is being set to the Stream Deck install directory.
+
 # SDPL
 A 3rd-party environment launcher for Stream Deck plugins.
 
