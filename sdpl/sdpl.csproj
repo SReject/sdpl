@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
+    <StartupObject>sdpl.Plugin</StartupObject>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <Description>Streamdeck 3rd party environment plugin launcher</Description>
+    <Authors>SReject</Authors>
+    <Company>SRWorks</Company>
+    <Copyright>2018 (c) SReject</Copyright>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
+  </ItemGroup>
+
+</Project>
