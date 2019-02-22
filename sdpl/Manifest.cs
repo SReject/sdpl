@@ -4,11 +4,9 @@ using System.IO;
 
 namespace sdpl {
     public class SDManifest {
-        public Manifest SDPL { get; private set; }
+        public Manifest SDPL { get; set; }
     }
     public class Manifest {
-        public bool UseShell { get; set; } = false;
-        public bool ConsoleApp { get; set; } = false; // Not implemented yet;
         public bool HideWindow { get; set; } = true;
         public string Path { get; set; } = "";
         public string Arguments { get; set; } = "";
