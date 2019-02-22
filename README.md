@@ -42,9 +42,9 @@ All SDPL configuration options are housed in the manifest.json under "SDPL"
 
         // "Path" as string - Required
         //     Path to the executable to run
-        //     If a relative path is used it is relative to the plugin's directory
         //     Can be an environment variable such as 'node' or 'java'
-        "Path": "node.exe",
+        //     If a relative path is used it is relative to the plugin's directory
+        "Path": "node",
 
         // "Arguments" as string - Optional - Defaults to an empty string
         //     Arguments to pass to the executable upon launch
