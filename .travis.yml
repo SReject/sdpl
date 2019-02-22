@@ -1,0 +1,7 @@
+language: csharp
+solution: sdpl.sln
+
+os: windows
+mono: none
+dotnet: 2.2.2
+
