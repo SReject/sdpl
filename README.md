@@ -16,10 +16,9 @@ Currently, Stream Deck does not allow plugins to specify arguments to be passed 
 
 ## Usage
 1. Download the latest [Release](https://github.com/SReject/sdpl/releases)
-2. Extract to \<streamdeck plugin directory\>/name.of.your.plugin.sdPlugin
-3. Edit the `manifest.json` file as indicated below
-4. Add related files
-5. Launch Streamdeck
+2. Extract to your plugin's directory
+3. Edit your plugins `manifest.json` file as indicated below
+4. Launch Streamdeck
 
 ## manifest.json
 
@@ -27,8 +26,10 @@ All SDPL configuration options are housed in the manifest.json under "SDPL"
 
 ```js
 {
-    // rest of manifest
+    // ... rest of manifest ...
 
+    // CodePath should point to the executable created after building
+    "CodePath": "sdpl/sdpl.exe",
     "SDPL": {
 
         // "HideWindow" as Boolean - Optional - Defaults to true
