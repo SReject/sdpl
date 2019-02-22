@@ -1,9 +1,8 @@
-# Notice
-Due to a bug in the Stream Deck software this repository is not in functioning condition.
-That bug being the working directory for executables is not being set to the plugin's directory; instead it is being set to the Stream Deck install directory.
-
 # SDPL
 A 3rd-party environment launcher for Stream Deck plugins.
+
+# Notice
+This project requires StreamDeck v4.2 or later
 
 ## Goal
 SDPL aims to provide a wrapper for launching and monitoring 3rd-party runtime environments for use as a Stream Deck plugin; examples include launching NodeJS, PHP, Ruby, Perl, Java and so forth
@@ -32,12 +31,6 @@ All SDPL configuration options are housed in the manifest.json under "SDPL"
 
     "SDPL": {
 
-        // "UseShell" as Boolean - Optional - Defaults to false
-        //     Set to true if the process should be launched via shell commands
-        //     this allows the use of PATH/environment variables
-        //     Such as using "java" to reference a globally installed JAVA runtime
-        "UseShell": false,
-
         // "HideWindow" as Boolean - Optional - Defaults to true
         //     Set to true if the process's main window should be hidden
         "HideWindow": true,
@@ -45,7 +38,7 @@ All SDPL configuration options are housed in the manifest.json under "SDPL"
         // "Path" as string - Required
         //     Path to the executable to run
         //     If a relative path is used it is relative to the plugin's directory
-        //     If UseShell is true this can be a PATH/environment variable
+        //     Can be an environment variable such as 'node' or 'java'
         "Path": "node.exe",
 
         // "Arguments" as string - Optional - Defaults to an empty string
