@@ -2,9 +2,9 @@
 
 namespace sdpl {
     class Plugin {
-        public static string Directory = System.IO.Directory.GetCurrentDirectory();
-        public static Launch launcher;
+        public static string Directory = Environment.CurrentDirectory;
 
+        public static Launch launcher;
         private static bool LauncherRunning = false;
 
         static void Main(string[] args) {
