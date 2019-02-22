@@ -1,18 +1,22 @@
 # SDPL
 A 3rd-party environment launcher for Stream Deck plugins.
 
+
 # Notice
 This project requires StreamDeck v4.2 or later
+
 
 ## Goal
 SDPL aims to provide a wrapper for launching and monitoring 3rd-party runtime environments for use as a Stream Deck plugin; examples include launching NodeJS, PHP, Ruby, Perl, Java and so forth
 
 Currently, Stream Deck does not allow plugins to specify arguments to be passed to an executable. This is very limiting as most runtime environments consist of an executate that requires arguments indicating which file it should process. SPDL provides such functionality along with a few QOL features
 
+
 ## Features
-* Allows runtimes to be launched with arguments
-* Logs all output from the runtime to \<plugin\>/sdpl.log
-* Simple to use
+* Runtimes can be launched with arguments
+* Can launch executables via environment/PATH variables
+* Logs all outputs from the executable to `<plugin_dir>/logs/sdpl.log`
+
 
 ## Usage
 1. Download the latest [Release](https://github.com/SReject/sdpl/releases)
@@ -20,8 +24,8 @@ Currently, Stream Deck does not allow plugins to specify arguments to be passed 
 3. Edit your plugins `manifest.json` file as indicated below
 4. Launch Streamdeck
 
-## manifest.json
 
+## manifest.json
 All SDPL configuration options are housed in the manifest.json under "SDPL"
 
 ```js
@@ -48,4 +52,3 @@ All SDPL configuration options are housed in the manifest.json under "SDPL"
     }
 }
 ```
-
