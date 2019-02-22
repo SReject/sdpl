@@ -28,12 +28,12 @@ namespace sdpl {
             // Build start info
             ProcessStartInfo LaunchInfo = new ProcessStartInfo();
             LaunchInfo.RedirectStandardOutput = true;
-            LaunchInfo.RedirectStandardError = true;
-            LaunchInfo.FileName = manifest.Path;
-            LaunchInfo.Arguments = manifest.Arguments;
-            LaunchInfo.CreateNoWindow = manifest.HideWindow;
-            LaunchInfo.UseShellExecute = manifest.UseShell;
-            LaunchInfo.WorkingDirectory = Plugin.Directory;
+            LaunchInfo.RedirectStandardError  = true;
+            LaunchInfo.FileName               = manifest.Path;
+            LaunchInfo.Arguments              = manifest.Arguments;
+            LaunchInfo.CreateNoWindow         = manifest.HideWindow;
+            LaunchInfo.UseShellExecute        = false;
+            LaunchInfo.WorkingDirectory       = Plugin.Directory;
 
             // Setup process
             process = new Process();
