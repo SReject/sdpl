@@ -3,5 +3,5 @@ solution: sdpl.sln
 
 os: windows
 mono: none
-dotnet: 2.2.2
+dotnet: "2.2"
 
